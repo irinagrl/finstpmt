@@ -29,20 +29,16 @@
     flex-direction: row;
     justify-content: baseline;
     align-items: baseline;
-    /* border: 1px red solid; */
 
 }
 
 img.pl__flag_small {
-    /* border: 1px red solid; */
-    /* z-index: 11; */
     margin: 0;
 }
 
 .menu__item_link {
     display: block;
     padding: 20px 20px;
-    /* border-right: 1px solid #f4f4f4; */
     text-decoration: none;
     color: #000;
     cursor: pointer;
@@ -68,15 +64,13 @@ img.pl__flag_small {
 
 .menu-icon {
     cursor: pointer;
-    display: inline-block;
-    float: right;
+    /* display: inline-block; */
+    /* float: right; */
     padding: 28px 20px;
     position: relative;
     user-select: none;
-    /* top: 40;
+    position: absolute;
     right: 0;
-    position: fixed; */
-
 }
 
 .menu-icon .navicon {
