@@ -1,32 +1,35 @@
 /*menu btn*/
 
 function menuOpenHandler() {
+    console.log('works')
     const container = document.querySelector('.menu__container');
+    container.style.visibility = 'visible';
 
     // when menu opened
     if (container.classList.contains('menu_open') === false) {
         container.classList.add('menu_open');
+
         document.querySelector('.main').style.opacity = '.5';
         document.querySelector('.login').style.opacity = '.5';
         document.querySelector('.logo').style.opacity = '.5';
     }
-    //when menu closed 
-    else {
-        container.classList.remove('menu_open');
+}
+
+function menuCloseHandler(evt) {
+    const menuButton = document.querySelector('.header__burger');
+    const menu = document.querySelector('.menu__container');
+    if (!menu.contains(evt.target) && !menuButton.contains(evt.target)) {
+        menu.style.visibility = 'hidden';
+        menu.classList.remove('menu_open');
         document.querySelector('.main').style.opacity = '1';
         document.querySelector('.login').style.opacity = '1';
         document.querySelector('.logo').style.opacity = '1';
     }
-}
-
-function menuCloseHandler() {
-    document.querySelector('.menu').style.visibility = 'hidden';
 
 }
 
-document.querySelector('.menu-icon').addEventListener('click', menuOpenHandler);
-document.querySelector('.menu__item').addEventListener('click', menuCloseHandler);
-
+document.querySelector('.header__burger').addEventListener('click', menuOpenHandler);
+document.addEventListener('click', menuCloseHandler);
 
 /*read more button*/
 

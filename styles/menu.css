@@ -12,7 +12,7 @@
     list-style: none;
     overflow: hidden;
     background-color: #fff;
-
+    /* margin-top: 50px; */
 }
 
 .menu_open {
@@ -21,7 +21,7 @@
     position: fixed;
     width: 40%;
     height: 100vh;
-    z-index: 10;
+    z-index: 20;
 }
 
 .menu__item_regs {

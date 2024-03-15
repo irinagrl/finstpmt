@@ -17,7 +17,7 @@
 
 .logo {
     width: 150px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     /* border: red solid 1px; */
     /* height: 40px; */
     display: flex;
@@ -35,4 +35,67 @@
     line-height: 0;
     margin-left: 2px;
     margin-top: 5px;
+}
+
+.menu {
+    /* border: 1px red solid; */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    left: 60%;
+    top: 0;
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    z-index: 20;
+}
+
+.menu__item_regs {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+
+}
+
+img.pl__flag_small {
+    margin: 0;
+}
+
+.menu__item_link {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.header__burger {
+    height: 14px;
+    width: 22px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.header__two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 15px;
+}
+
+.header__burger_line {
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    margin-bottom: 4px;
+}
+
+.menu__container {
+    visibility: hidden;
+    background-color: #fff;
 }
