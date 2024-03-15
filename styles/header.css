@@ -1,0 +1,45 @@
+@import url(/styles/menu.css);
+
+.header {
+    /* height: 1150px; */
+
+}
+
+.login {
+    background-color: #252525;
+    /* background-image: url('../imgs/get-now.png'); */
+    color: #fff;
+    /* height: 26px; */
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.login__link {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.logo {
+    width: 150px;
+    margin-top: 20px;
+    /* border: red solid 1px; */
+    /* height: 40px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.logo__img {
+    width: 150px;
+    /* border: red solid 1px; */
+    margin: 0;
+}
+
+.logo__text {
+    font-size: 10px;
+    line-height: 0;
+    margin-left: 2px;
+    margin-top: 5px;
+}

@@ -1,0 +1,57 @@
+.regulations {
+    background-color: #252525;
+    background-image: url('../imgs/get-now.png');
+    color: #fff;
+    /* padding-bottom: 30px; */
+    /* padding-top: 10px; */
+}
+
+.regs__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.regs__item_link {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* .regs__item_link:hover {
+    background-color: #f4f4f4;
+    color: #000;
+} */
+
+.regs__container {
+    list-style-type: none;
+    line-height: 2;
+    /* margin-bottom: ; */
+    padding: 0;
+    /* margin-left: 10px; */
+}
+
+.regs__btn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #fff;
+    padding: 0;
+}
+
+.regs__text {
+    font-weight: 100;
+    font-size: x-small;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+/* .regs__text {
+} */
+
+#more {
+    display: none;
+}
