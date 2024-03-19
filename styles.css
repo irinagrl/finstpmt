@@ -1,36 +1,18 @@
-@import url(./styles/header.css);
-/* @import url(./styles/menu.css); */
-@import url(./styles/about.css);
-@import url(./styles/regulations.css);
-@import url(./styles/contacts.css);
-@import url(./styles/scroll.css);
-@import url(./styles/partners.css);
-@import url(./styles/footer.css);
+@import url(./static/styles/header.css);
+@import url(./static/styles/about.css);
+@import url(./static/styles/regulations.css);
+@import url(./static/styles/contacts.css);
+@import url(./static/styles/scroll.css);
+@import url(./static/styles/partners.css);
+@import url(./static/styles/cookies.css);
 
 @font-face {
     font-display: swap;
     font-family: "Gilroy";
-    src: url('./assets/fonts/Gilroy-Regular.eot');
-    src: url('./assets/fonts/Gilroy-Regular.woff') format("woff"),
-        url('./assets/fonts/Gilroy-Regular.woff2') format("woff2");
+    src: url('./static/assets/fonts/Gilroy-Regular.eot');
+    src: url('./static/assets/fonts/Gilroy-Regular.woff') format("woff"),
+        url('./static/assets/fonts/Gilroy-Regular.woff2') format("woff2");
     font-weight: 400
-}
-
-/* @font-face {
-    font-display: swap;
-    font-family: "Barlow";
-    src: url('./assets/fonts/Barlow-Regular.eot');
-    src: url('./assets/fonts/Barlow-Regular.woff') format("woff"),
-        url('./assets/fonts/Barlow-Regular.woff2') format("woff2");
-} */
-
-body {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #fff;
-    margin: 0;
-    height: 100%;
 }
 
 * {
@@ -49,59 +31,38 @@ a:hover {
     opacity: .9;
 }
 
-.text_bold {
-    font-weight: 700;
+body {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fff;
+    margin: 0;
+    height: 100%;
 }
 
 section {
-    /* margin-bottom: 50px; */
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.main {
-    position: absolute;
-    top: 120px;
-}
-
-.section__title {
-    /* padding-left: 15px;
-    padding-right: 15px; */
-    /* margin-top: 30px; */
-    margin-bottom: 20px;
-}
-
-.bg_contact {
+.page {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
 }
 
-
-.bg__img {
-    position: absolute;
-    /* bottom: -10px; */
-    top: 80px;
-    width: 100%;
-    z-index: -10;
+.section__title {
+    margin-bottom: 20px;
 }
 
-.pl__flag {
-    height: 24px;
-    width: auto;
-    margin-left: 20px;
-    margin-bottom: 30px;
-
-    /* padding-top: 3px; */
-}
-
-
-
-.pl__flag_small {
-    height: 16px;
-    width: auto;
-    margin-left: 20px;
-    margin-bottom: 30px;
-
-    /* padding-top: 3px; */
+@media (min-width: 700px) {
+    section {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
 }

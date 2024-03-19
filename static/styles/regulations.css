@@ -1,9 +1,7 @@
 .regulations {
     background-color: #252525;
-    background-image: url('../imgs/get-now.png');
+    background-image: url('../assets/imgs/get-now.png');
     color: #fff;
-    /* padding-bottom: 30px; */
-    /* padding-top: 10px; */
 }
 
 .regs__title {
@@ -12,23 +10,23 @@
     align-items: center;
 }
 
+.pl__flag {
+    height: 24px;
+    width: auto;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
 .regs__item_link {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
 }
 
-/* .regs__item_link:hover {
-    background-color: #f4f4f4;
-    color: #000;
-} */
-
 .regs__container {
     list-style-type: none;
     line-height: 2;
-    /* margin-bottom: ; */
     padding: 0;
-    /* margin-left: 10px; */
 }
 
 .regs__btn {
@@ -49,9 +47,13 @@
     margin-bottom: 25px;
 }
 
-/* .regs__text {
-} */
-
 #more {
     display: none;
+}
+
+@media (min-width: 700px) {
+    .regs__text {
+        width: 700px;
+        font-size: 12px;
+    }
 }

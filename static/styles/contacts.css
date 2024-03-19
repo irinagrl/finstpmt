@@ -1,0 +1,39 @@
+.contact {
+    background: url('../assets/imgs/city.jpg') no-repeat no-repeat bottom;
+    background-size: 100% auto;
+    padding-bottom: 100px;
+}
+
+.bg__img {
+    width: 100%;
+    height: auto;
+}
+
+.address {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.contacts_text {
+    line-height: 1.5;
+    text-decoration: none;
+    color: #000;
+}
+
+@media (min-width: 525px) {
+    .contact {
+        padding-bottom: 150px;
+    }
+}
+
+@media (min-width: 760px) {
+    .contact {
+        padding-bottom: 200px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .contact {
+        padding-bottom: 330px;
+    }
+}

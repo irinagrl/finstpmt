@@ -1,7 +1,14 @@
 /*menu btn*/
 
+function adjustMenu() {
+    setTimeout(function () {
+        location.reload();
+    }, 100);
+}
+
+window.addEventListener('resize', adjustMenu);
+
 function menuOpenHandler() {
-    console.log('works')
     const container = document.querySelector('.menu__container');
     container.style.visibility = 'visible';
 
@@ -18,12 +25,19 @@ function menuOpenHandler() {
 function menuCloseHandler(evt) {
     const menuButton = document.querySelector('.header__burger');
     const menu = document.querySelector('.menu__container');
-    if (!menu.contains(evt.target) && !menuButton.contains(evt.target)) {
-        menu.style.visibility = 'hidden';
-        menu.classList.remove('menu_open');
-        document.querySelector('.main').style.opacity = '1';
-        document.querySelector('.login').style.opacity = '1';
-        document.querySelector('.logo').style.opacity = '1';
+    const elmWidth = document.querySelector('.header').offsetWidth;
+
+    if (elmWidth < 675) {
+
+        if (!menu.contains(evt.target) && !menuButton.contains(evt.target)) {
+            menu.style.visibility = 'hidden';
+            menu.classList.remove('menu_open');
+            document.querySelector('.main').style.opacity = '1';
+            document.querySelector('.login').style.opacity = '1';
+            document.querySelector('.logo').style.opacity = '1';
+        }
+    } else {
+        // do nothing
     }
 
 }
@@ -68,3 +82,12 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// cookies close icon
+
+function iconCloseHandler() {
+    console.log('closed')
+    document.querySelector('.cookies__note').style.display = 'none';
+}
+
+document.querySelector('.icon__close').addEventListener('click', iconCloseHandler);

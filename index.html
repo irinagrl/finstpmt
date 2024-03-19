@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/assets/imgs/favicon-32x32.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="normalize.css">
     <title>Finstrument</title>
@@ -17,68 +17,71 @@
                 <a href="https://client.finstrument.pl" class="login__link" target=”_blank”>Sign up</a>
             </div>
             <div class="header__two">
-                <div class="logo"><img src="./imgs/finstrument_logo.svg" alt="finstrument logo" class="logo__img">
+                <a class="logo" href="index.html">
+                    <img src="./static/assets/imgs/finstrument_logo.svg" alt="finstrument logo" class="logo__img">
                     <p class="logo__text">your reliable financial instrument</p>
+                </a>
+
+                <div class="menu__container">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#about" class="menu__item_link">About</a></li>
+                        <li class="menu__item menu__item_regs"><a href="#regulations"
+                                class="menu__item_link">Regulations
+                                <img src="./static/assets/imgs/pl_flag.png" alt="Polish flag"
+                                    class="pl__flag_small"></a>
+                        </li>
+                        <li class="menu__item"><a href="#contact" class="menu__item_link">Contact</a></li>
+                    </ul>
                 </div>
+
                 <div class="header__burger">
                     <div class="header__burger_line"></div>
                     <div class="header__burger_line"></div>
                     <div class="header__burger_line"></div>
                 </div>
+
             </div>
-            <div class="menu__container">
-                <ul class="menu">
-                    <li class="menu__item"><a href="#about" class="menu__item_link">About</a></li>
-                    <li class="menu__item menu__item_regs"><a href="#regulations"
-                            class="menu__item_link">Regulations</a>
-                        <img src="./imgs/pl_flag.png" alt="Polish flag" class="pl__flag_small">
-                    </li>
-                    <li class="menu__item"><a href="#contact" class="menu__item_link">Contact</a></li>
-                </ul>
-            </div>
-            <!-- </div> -->
         </header>
-
-
 
         <main class="main">
 
             <article class="about" id="about">
                 <section class="intro">
-                    <img src="./imgs/yellow_square.jpg" alt="yellow square" class="intro__img">
+                    <img src="./static/assets/imgs/yellow_square.jpg" alt="yellow square" class="intro__img">
+
                     <p class="intro__text lineUp"> <span class="text_bold">Finstrument Sp. z o.o.</span> is <br>
                         an e-payment platform that centralizes day-to-day payment & financial activities performed by
                         individuals, small and medium-sized entrepreneurs, freelancers, e-commerce entities, employment
                         agencies, etc.</p>
+
                 </section>
 
                 <section class="fiveps">
                     <h2 class="section__title">About</h2>
                     <ul class="fiveps__container">
                         <li class="fiveps__item lineUp">
-                            <div class="fiveps__bullet"><img class="fiveps__img" alt="1" src="./imgs/ps1.png"></div>
+                            <div class="fiveps__bullet"><img class="fiveps__img" alt="1"
+                                    src="./static/assets/imgs/ps1.png"></div>
 
                             <p class="fiveps__text">Finstrument was established in 2020 by a team of financial
-                                professionals
-                                with many years of experience in payment industry and banking. We are licensed and
-                                regulated
-                                by the KNF.
+                                professionals with many years of experience in payment industry and banking. We are
+                                licensed and regulated by the KNF.
                             </p>
                         </li>
 
                         <li class="fiveps__item reveal fade-left">
-                            <div class="fiveps__bullet"><img class="fiveps__img" alt="1" src="./imgs/ps2.png"></div>
+                            <div class="fiveps__bullet"><img class="fiveps__img" alt="1"
+                                    src="./static/assets/imgs/ps2.png"></div>
 
                             <p class="fiveps__text">We have offices in Poznan and Warsaw for our colleagues and
-                                partners. At
-                                the same time we are fully focused on providing remote services, thus are not planning
-                                to
-                                create a network of sales offices.
+                                partners. At the same time we are fully focused on providing remote services, thus are
+                                not planning to create a network of sales offices.
                             </p>
                         </li>
 
                         <li class="fiveps__item reveal fade-right">
-                            <div class="fiveps__bullet"><img class="fiveps__img" alt="1" src="./imgs/ps3.png"></div>
+                            <div class="fiveps__bullet"><img class="fiveps__img" alt="1"
+                                    src="./static/assets/imgs/ps3.png"></div>
 
                             <p class="fiveps__text">Our prices take into account market situation, operational costs,
                                 non-operating costs, planned profitability, legal restrictions.
@@ -86,16 +89,17 @@
                         </li>
 
                         <li class="fiveps__item reveal fade-left">
-                            <div class="fiveps__bullet"><img class="fiveps__img" alt="1" src="./imgs/ps4.png"></div>
+                            <div class="fiveps__bullet"><img class="fiveps__img" alt="1"
+                                    src="./static/assets/imgs/ps4.png"></div>
 
-                            <p class="fiveps__text">Our target audience are migrants from Ukraine due to our
-                                understanding
-                                their needs and behaviour.
+                            <p class="fiveps__text">Our target audience are Individuals and SME, including migrants, due
+                                to our understanding of their needs and behaviour.
                             </p>
                         </li>
 
                         <li class="fiveps__item reveal fade-right">
-                            <div class="fiveps__bullet"><img class="fiveps__img" alt="1" src="./imgs/ps5.png"></div>
+                            <div class="fiveps__bullet"><img class="fiveps__img" alt="1"
+                                    src="./static/assets/imgs/ps5.png"></div>
 
                             <p class="fiveps__text">To compete with other financial services providers, we also
                                 intend to offer a range of services from our partner such as insurance, leasing, rent
@@ -108,25 +112,24 @@
 
                 <section class="partners">
                     <h2 class="section__title reveal fade-bottom">Our partners</h2>
-                    <!-- <img src="./imgs/partners.png" alt="list of partners" class="partners__img" /> -->
                     <div class="partners__container">
-                        <img src="./imgs/pt_crassula.png" alt="list of partners"
+                        <img src="./static/assets/imgs/pt_crassula.png" alt="list of partners"
                             class="partners__img reveal fade-left" />
-                        <img src="./imgs/pt_dudkowiak.png" alt="list of partners"
+                        <img src="./static/assets/imgs/pt_dudkowiak.png" alt="list of partners"
                             class="partners__img reveal fade-left" />
-                        <img src="./imgs/pt_fenige.png" alt="list of partners"
+                        <img src="./static/assets/imgs/pt_fenige.png" alt="list of partners"
                             class="partners__img reveal fade-right" />
-                        <img src="./imgs/pt_google_cloud.png" alt="list of partners"
+                        <img src="./static/assets/imgs/pt_google_cloud.png" alt="list of partners"
                             class="partners__img reveal fade-left" />
-                        <img src="./imgs/pt_quicko.png" alt="list of partners"
+                        <img src="./static/assets/imgs/pt_quicko.png" alt="list of partners"
                             class="partners__img reveal fade-right" />
-                        <img src="./imgs/pt_sparados.png" alt="list of partners"
+                        <img src="./static/assets/imgs/pt_sparados.png" alt="list of partners"
                             class="partners__img reveal fade-right" />
-                        <img src="./imgs/pt_Sumsub_logo.jpg" alt="list of partners"
+                        <img src="./static/assets/imgs/pt_Sumsub_logo.jpg" alt="list of partners"
                             class="partners__img reveal fade-left" />
-                        <img src="./imgs/pt_verific.jpeg" alt="list of partners"
+                        <img src="./static/assets/imgs/pt_verific.jpeg" alt="list of partners"
                             class="partners__img reveal fade-bottom" />
-                        <img src="./imgs/pt_Web-Shield-Logo.png" alt="list of partners"
+                        <img src="./static/assets/imgs/pt_Web-Shield-Logo.png" alt="list of partners"
                             class="partners__img reveal fade-right" />
                     </div>
                 </section>
@@ -135,7 +138,7 @@
             <section class="regulations" id="regulations">
                 <div class="regs__title  reveal fade-left">
                     <h2 class="section__title">Regulamin i opłaty</h2>
-                    <img src="./imgs/pl_flag.png" alt="Polish flag" class="pl__flag">
+                    <img src="./static/assets/imgs/pl_flag.png" alt="Polish flag" class="pl__flag">
                 </div>
 
                 <ul class="regs__container">
@@ -184,39 +187,39 @@
                     <li class="regs__item  reveal fade-left"><a
                             href="./assets/pdf/FINSTRUMENT_polityka-prywatnosci-20230801.pdf" class="regs__item_link"
                             target=”_blank”>Polityka prywatności</a></li>
-                    <li class="regs__item  reveal fade-left"><a href="" class="regs__item_link" target=”_blank”>Zasady
-                            rozpatrywania
-                            reklamacji</a></li>
+                    <!-- <li class="regs__item  reveal fade-left"><a href="" class="regs__item_link" target=”_blank”>Zasady
+                            rozpatrywania reklamacji</a></li>
                     <li class="regs__item  reveal fade-left"><a href="" class="regs__item_link"
-                            target=”_blank”>Informacje o
-                            usługach
-                            płatniczych</a></li>
-
+                            target=”_blank”>Informacje o usługach płatniczych</a></li> -->
                 </ul>
             </section>
-            <div class="bg_contact">
-                <img src="./imgs/city.jpg" alt="city" class="bg__img" />
 
-                <section class="contact" id="contact">
-                    <h2 class="section__title">Contacts </h2>
-                    <h4>Email:</h4>
+            <section class="contact" id="contact">
+                <h2 class="section__title">Contacts </h2>
 
-                    <a class="contacts_text" href="&#x6d;ailto&#58;we&#x6c;&#x63;ome&#x40;fins&#x74;rume&#x6e;t@@pl"
-                        onmouseover="this.href=this.href.replace('@@','.')">
-                        we&#x6c;&#x63;ome&#x40;fins&#x74;rume&#x6e;t.pl </a>
+                <h4>Email:</h4>
+                <a class="contacts_text" href="&#x6d;ailto&#58;we&#x6c;&#x63;ome&#x40;fins&#x74;rume&#x6e;t@@pl"
+                    onmouseover="this.href=this.href.replace('@@','.')">
+                    we&#x6c;&#x63;ome&#x40;fins&#x74;rume&#x6e;t.pl </a>
 
-                    <h4 class="address"> Address:</h4>
-                    <p class="contacts_text"> ul. Młyńska, 16,</p>
-                    <p class="contacts_text"> Piętro 8, kod 61-730,</p>
-                    <p class="contacts_text"> Poznań, Polska </p>
-                    </h4>
-                </section>
+                <h4 class="address"> Address:</h4>
+                <p class="contacts_text"> ul. Młyńska, 16,</p>
+                <p class="contacts_text"> Piętro 8, kod 61-730,</p>
+                <p class="contacts_text"> Poznań, Polska </p>
+                </h4>
+
+            </section>
+
+            <div class="cookies__note">
+                <p class="cookies__note_text">We use cookies.
+                    <a href="cookies.html" class="cookies__note_link">What does it mean?</a>
+                </p>
+                <img src="./static/assets/imgs/icon-close.png" alt="icon close" class="icon__close">
+            </div>
 
         </main>
 
-        <footer class="footer">
-        </footer>
-    </div>
+        <footer class="footer"></footer>
     </div>
 
     <script src="script.js"></script>

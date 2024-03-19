@@ -1,0 +1,77 @@
+.intro {
+    position: relative;
+    overflow-x: clip;
+}
+
+.text_bold {
+    font-weight: 700;
+}
+
+.intro__img {
+    position: absolute;
+    bottom: 0px;
+    width: 99vw;
+    max-width: 1024px;
+    z-index: -10;
+}
+
+.intro__text {
+    width: 60%;
+    line-height: 1.5;
+}
+
+.fiveps {
+    background-color: #252525;
+    background-image: url('../assets/imgs/get-now.png');
+
+    color: #fff;
+}
+
+.fiveps__container {
+    padding: 0;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.fiveps__item {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: space-between;
+    margin-top: 30px;
+}
+
+.fiveps__bullet {
+    margin: 0;
+}
+
+.fiveps__img {
+    height: 60px;
+}
+
+.fiveps__text {
+    width: 70%;
+    line-height: 1.5;
+}
+
+@media (min-width: 510px) {
+    .intro__text {
+        width: 50%;
+    }
+}
+
+@media (min-width: 700px) {
+    .intro__text {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .fiveps__item {
+        width: 900px;
+    }
+
+    .fiveps__text {
+        width: 700px;
+    }
+}

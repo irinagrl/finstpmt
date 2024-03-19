@@ -1,8 +1,6 @@
 .login {
     background-color: #252525;
-    /* background-image: url('../imgs/get-now.png'); */
     color: #fff;
-    /* height: 26px; */
     text-align: right;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -17,16 +15,14 @@
 
 .logo {
     width: 150px;
-    /* margin-top: 20px; */
-    /* border: red solid 1px; */
-    /* height: 40px; */
     display: flex;
     flex-direction: column;
+    margin-right: 100px;
+    text-decoration: none;
 }
 
 .logo__img {
     width: 150px;
-    /* border: red solid 1px; */
     margin: 0;
 }
 
@@ -38,15 +34,15 @@
 }
 
 .menu {
-    /* border: 1px red solid; */
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
     background-color: #fff;
-    left: 60%;
+    right: 0;
     top: 0;
     position: fixed;
+    min-width: 180px;
     width: 40%;
     height: 100vh;
     z-index: 20;
@@ -57,11 +53,11 @@
     flex-direction: row;
     justify-content: baseline;
     align-items: baseline;
-
 }
 
-img.pl__flag_small {
-    margin: 0;
+.pl__flag_small {
+    width: 16px;
+    margin-left: 5px;
 }
 
 .menu__item_link {
@@ -84,7 +80,6 @@ img.pl__flag_small {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
     padding: 15px;
 }
 
@@ -98,4 +93,28 @@ img.pl__flag_small {
 .menu__container {
     visibility: hidden;
     background-color: #fff;
+}
+
+@media (min-width: 675px) {
+    .header__two {
+        justify-content: flex-start;
+    }
+
+    .header__burger {
+        visibility: hidden;
+    }
+
+    .menu__container {
+        visibility: visible;
+        background-color: transparent;
+    }
+
+    .menu {
+        background-color: transparent;
+        width: 100%;
+        position: initial;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+    }
 }
