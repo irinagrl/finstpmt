@@ -19,6 +19,7 @@
     flex-direction: column;
     margin-right: 100px;
     text-decoration: none;
+    color: #000;
 }
 
 .logo__img {
